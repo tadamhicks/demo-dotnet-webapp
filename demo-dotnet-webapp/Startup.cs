@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ContosoUniversity.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace demo_dotnet_webapp
 {
@@ -22,13 +24,15 @@ namespace demo_dotnet_webapp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<SchoolContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
+            {   
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
             }
