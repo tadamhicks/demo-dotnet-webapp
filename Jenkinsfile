@@ -45,7 +45,15 @@ node {
   "image": "/assets/apps/template.png",
   "tiers": [
     "Web": [
-      "linkedTiers": [],
+      "linkedTiers": [
+        "Database"
+      ],
+      "tier": [
+        "bootOrder": 1,
+        "lockedFields": [
+          "bootOrder"
+        ]
+      ],
       "instances": [
         [
           "instance": [
@@ -57,7 +65,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "frontend",
+            "name": "frontending",
             "allowExisting": false,
             "shutdownDays": "1",
             "userGroup": [
@@ -206,7 +214,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "backend",
+            "name": "backending",
             "allowExisting": true,
             "shutdownDays": "1",
             "userGroup": [
@@ -337,7 +345,7 @@ node {
       ]
     ]
   ],
-  "name": "example",
+  "name": "example1",
   "templateImage": "",
   "type": "morpheus",
   "id": 162,
