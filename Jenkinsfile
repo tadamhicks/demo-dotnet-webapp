@@ -326,7 +326,7 @@ node {
       ]
     ]
   ],
-  "name": "qwdqw",
+  "name": "Dotnet Demo App",
   "templateImage": "",
   "type": "morpheus",
   "id": 162,
