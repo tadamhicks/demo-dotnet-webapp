@@ -68,7 +68,7 @@ node {
             ]
           ],
           "servicePlanOptions": [
-            "maxCores": 1,
+            "maxCores": 2,
             "coresPerSocket": 1
           ],
           "backup": [
@@ -89,8 +89,8 @@ node {
               "network": [
                 "idName": "VM Network",
                 "pool": [
-                  "name": "10.30.20.0/22",
-                  "id": 2
+                  "id": 2,
+                  "name": "10.30.20.0/22"
                 ],
                 "id": "network-1",
                 "hasPool": true
@@ -170,7 +170,26 @@ node {
             "code": "vm-4096",
             "id": 148
           ],
-          "lockedFields": []
+          "lockedFields": [],
+          "ports": [
+            [
+              "name": "",
+              "port": "",
+              "lb": ""
+            ]
+          ],
+          "metadata": [
+            [
+              "name": "",
+              "value": ""
+            ]
+          ],
+          "evars": [
+            [
+              "name": "",
+              "value": ""
+            ]
+          ]
         ]
       ]
     ],
@@ -219,8 +238,8 @@ node {
               "network": [
                 "idName": "VM Network",
                 "pool": [
-                  "name": "10.30.20.0/22",
-                  "id": 2
+                  "id": 2,
+                  "name": "10.30.20.0/22"
                 ],
                 "id": "network-1",
                 "hasPool": true
@@ -294,6 +313,25 @@ node {
           "plan": [
             "code": "vm-4096",
             "id": 148
+          ],
+          "ports": [
+            [
+              "name": "",
+              "port": "",
+              "lb": ""
+            ]
+          ],
+          "metadata": [
+            [
+              "name": "",
+              "value": ""
+            ]
+          ],
+          "evars": [
+            [
+              "name": "",
+              "value": ""
+            ]
           ]
         ]
       ]
@@ -309,7 +347,7 @@ node {
     "name": "Adam"
   ],
   "environment": "Dev"
-] 
+]
  
            echo morpheusApp.buildApp(morpheusUrl, postBody, "${bearer}")
         }
