@@ -57,7 +57,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "$[userInitials]-$[type]-demo$[sequence+1000]",
+            "name": "${userInitials}-${type}-demo${sequence+1000}",
             "allowExisting": false,
             "shutdownDays": "1",
             "userGroup": [
@@ -187,7 +187,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "$[userInitials]-$[type]-demo$[sequence+1000]",
+            "name": "${userInitials}-${type}-demo${sequence+1000}",
             "allowExisting": true,
             "shutdownDays": "1",
             "userGroup": [
