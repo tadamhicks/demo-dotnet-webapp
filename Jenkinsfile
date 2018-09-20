@@ -65,7 +65,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "frontending",
+            "name": "fronting",
             "allowExisting": false,
             "shutdownDays": "1",
             "userGroup": [
@@ -116,7 +116,7 @@ node {
               "name": "root",
               "rootVolume": true,
               "storageType": 1,
-              "datastoreId": "auto",
+              "datastoreId": 310,
               "maxStorage": 0
             ]
           ],
@@ -214,7 +214,7 @@ node {
             ],
             "expireDays": "2",
             "configEnabled": false,
-            "name": "backending",
+            "name": "backing",
             "allowExisting": true,
             "shutdownDays": "1",
             "userGroup": [
@@ -246,8 +246,8 @@ node {
               "network": [
                 "idName": "VM Network",
                 "pool": [
-                  "id": 2,
-                  "name": "10.30.20.0/22"
+                  "name": "10.30.20.0/22",
+                  "id": 2
                 ],
                 "id": "network-1",
                 "hasPool": true
@@ -265,7 +265,7 @@ node {
               "name": "root",
               "rootVolume": true,
               "storageType": 1,
-              "datastoreId": "auto",
+              "datastoreId": 310,
               "maxStorage": 0
             ]
           ],
@@ -321,31 +321,12 @@ node {
           "plan": [
             "code": "vm-4096",
             "id": 148
-          ],
-          "ports": [
-            [
-              "name": "",
-              "port": "",
-              "lb": ""
-            ]
-          ],
-          "metadata": [
-            [
-              "name": "",
-              "value": ""
-            ]
-          ],
-          "evars": [
-            [
-              "name": "",
-              "value": ""
-            ]
           ]
         ]
       ]
     ]
   ],
-  "name": "example1",
+  "name": "qwdqw",
   "templateImage": "",
   "type": "morpheus",
   "id": 162,
